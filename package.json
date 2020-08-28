@@ -1,0 +1,16 @@
+{
+  "name": "daily-cook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
+  },
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}
