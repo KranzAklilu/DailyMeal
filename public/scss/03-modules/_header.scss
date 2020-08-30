@@ -1,6 +1,7 @@
 .header {
   &__container {
     @include flex(column-reverse, flex-start, center);
+    margin-top: 20px;
     padding: 20px 0;
     background-color: #fff;
   }
@@ -9,6 +10,9 @@
     width: 100%;
     padding: 0 10%;
     margin: 0 auto;
+  }
+  &__social {
+    display: none;
   }
   &__logo {
     text-transform: capitalize;
@@ -48,8 +52,10 @@
   }
 
   &__input-container {
-    display: none;
     margin-top: 40px;
+    &--active {
+      display: none;
+    }
   }
   &__input {
     border: none;
@@ -138,6 +144,79 @@
     &__icon {
       cursor: pointer;
       margin: 0 10px;
+    }
+  }
+}
+@media (min-width: $large) {
+  .header {
+    max-width: 100%;
+    @include flex(column, flex-start, flex-start);
+    &__container {
+      background-color: #fff;
+      margin-top: 20px;
+      height: 100%;
+      width: 100%;
+      @include flex(row, space-between, center);
+    }
+    &__wrapper {
+      width: 100%;
+      @include flex(row, space-between, center);
+    }
+    &__social {
+      position: relative;
+      display: block;
+      @include flex(row, flex-start, center);
+    }
+    &__logo {
+      font-size: 1.9rem;
+    }
+    &__input-container {
+      position: relative;
+      left: 10%;
+      margin-top: 0;
+      @include flex(column-reverse, flex-start, flex-end);
+    }
+    &__input {
+      display: inline-block;
+      width: 175px;
+    }
+    .hamburger {
+      display: none;
+    }
+    .nav {
+      padding: 0;
+      background-color: #fff;
+      transition: none;
+      transform: scale(1);
+      &__list {
+        @include flex(row, space-evenly, center);
+        :nth-child(1) {
+          transition: none;
+          transform: translateX(0);
+        }
+        :nth-child(2) {
+          transition: none;
+          transform: translateX(0);
+        }
+        :nth-child(3) {
+          transition: none;
+          transform: translateX(0);
+        }
+        :nth-child(4) {
+          transition: none;
+          transform: translateX(0);
+        }
+        :nth-child(5) {
+          transition: none;
+          transform: translateX(0);
+        }
+      }
+      &__social {
+        display: none;
+        margin: 0;
+        transition: none;
+        transform: scale(1);
+      }
     }
   }
 }
