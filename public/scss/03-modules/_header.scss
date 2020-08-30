@@ -152,33 +152,34 @@
     max-width: 100%;
     @include flex(column, flex-start, flex-start);
     &__container {
+      padding: 0 40px;
       background-color: #fff;
       margin-top: 20px;
       height: 100%;
       width: 100%;
-      @include flex(row, space-between, center);
+      @include flex(row, space-evenly, center);
     }
     &__wrapper {
-      width: 100%;
-      @include flex(row, space-between, center);
+      padding: 0;
+      @include flex(row, center, center);
     }
     &__social {
+      width: 350px;
       position: relative;
       display: block;
-      @include flex(row, flex-start, center);
+      @include flex(row, center, center);
     }
     &__logo {
       font-size: 1.9rem;
     }
     &__input-container {
-      position: relative;
-      left: 10%;
-      margin-top: 0;
-      @include flex(column-reverse, flex-start, flex-end);
+      margin: 0;
+      width: 350px;
     }
     &__input {
-      display: inline-block;
-      width: 175px;
+      width: 70%;
+      font-size: 0.9rem;
+      margin: 0;
     }
     .hamburger {
       display: none;
@@ -189,6 +190,7 @@
       transition: none;
       transform: scale(1);
       &__list {
+        margin-bottom: 7px;
         @include flex(row, space-evenly, center);
         :nth-child(1) {
           transition: none;
