@@ -1,0 +1,114 @@
+.popular-recipes {
+  &__header {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__container {
+    margin: 50px auto;
+    width: 90%;
+    @include flex(column, flex-start, flex-start);
+  }
+  &__card {
+    width: 100%;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  &__card-img {
+    min-width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  &__card-header {
+    margin: 15px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+  &__card-desc {
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  &__link {
+    display: inline-block;
+    border: 1px solid;
+    margin: 25px 15px;
+    text-transform: uppercase;
+    background-color: $dark-blue;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  &__hr {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  &__menu {
+    padding: 20px 30px;
+    width: 100%;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  &__menu-header {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  &__list {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  &__item {
+    background-color: $light-gray;
+    margin: 30px 0;
+    padding: 10px 20px;
+    @include flex(row, flex-start, flex-start);
+  }
+  &__menu-img {
+    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+  }
+  &__text-container {
+    padding-left: 25px;
+  }
+  &__item-header {
+    margin-top: 6px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  &__item-desc {
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: $large) {
+  .popular-recipes {
+    &__header {
+      font-size: 1.7rem;
+    }
+    &__container {
+      @include flex(row, center, center);
+    }
+    &__hr {
+      display: none;
+    }
+    &__card {
+      margin-right: 15px;
+    }
+    &__card-img {
+      height: 300px;
+    }
+    &__menu {
+      margin-left: 15px;
+    }
+  }
+}
