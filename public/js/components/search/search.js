@@ -1,10 +1,16 @@
-import element from "../elements";
+import element from "../../elements";
 
 const search = function () {
-  element.searchInput.style.display = "block";
-  window.onscroll = (e) => {
+  window.onscroll = () => {
     const position = window.pageYOffset;
     if (position > 100) {
+      if (
+        element.searchInput.classList.contains(
+          "header__input-container--active"
+        )
+      ) {
+        return;
+      }
       element.searchInput.classList.add("header__input-container--active");
     } else {
       element.searchInput.classList.remove("header__input-container--active");

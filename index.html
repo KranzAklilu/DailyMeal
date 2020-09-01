@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/scss/main.scss" />
-    <script src="./public/js/app.js" defer></script>
     <title>Daily Meal</title>
   </head>
   <body>
@@ -101,7 +100,7 @@
             <div class="popular-recipes__card">
               <img
                 class="popular-recipes__card-img"
-                src="./assets/food3.jpg"
+                src="./assets/allProducts/food3.jpg"
                 alt=""
                 srcset=""
               />
@@ -115,57 +114,99 @@
             <hr class="popular-recipes__hr" />
             <div class="popular-recipes__menu">
               <h1 class="popular-recipes__menu-header">trending dishes</h1>
-              <div class="popular-recipes__list">
-                <div class="popular-recipes__item">
-                  <img
-                    class="popular-recipes__menu-img"
-                    src="./assets/food1.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                  <div class="popular-recipes__text-container">
-                    <h4 class="popular-recipes__item-header">name</h4>
+              <div class="popular-recipes__list"></div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <h1 class="testimonials__header">saticfied clients</h1>
+          <div class="testimonials__container">
+            <div class="testimonials__testimonial">
+              <img
+                class="testimonials__img"
+                src="./assets/someone.jpg"
+                alt=""
+              />
+              <p class="testimonials__parg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                rerum expedita harum eos veritatis ipsam, ea excepturi
+                molestiae, blanditiis ducimus velit dolore voluptatem quaerat
+                ratione?
+              </p>
+              <p class="testimonials__author">-- robert bamario</p>
+            </div>
+            <div
+              class="testimonials__testimonial testimonials__testimonial--active"
+            >
+              <img
+                class="testimonials__img"
+                src="./assets/someone.jpg"
+                alt=""
+              />
+              <p class="testimonials__parg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                rerum expedita harum eos veritatis ipsam, ea excepturi
+                molestiae, blanditiis ducimus velit dolore voluptatem quaerat
+                ratione?
+              </p>
+              <p class="testimonials__author">-- robert bamario</p>
+            </div>
 
-                    <p class="popular-recipes__item-desc">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </div>
-                <div class="popular-recipes__item">
-                  <img
-                    class="popular-recipes__menu-img"
-                    src="./assets/food5.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                  <div class="popular-recipes__text-container">
-                    <h4 class="popular-recipes__item-header">name</h4>
-
-                    <p class="popular-recipes__item-desc">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </div>
-                <div class="popular-recipes__item">
-                  <img
-                    class="popular-recipes__menu-img"
-                    src="./assets/food4.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                  <div class="popular-recipes__text-container">
-                    <h4 class="popular-recipes__item-header">name</h4>
-
-                    <p class="popular-recipes__item-desc">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="testimonials__testimonial">
+              <img
+                class="testimonials__img"
+                src="./assets/someone.jpg"
+                alt=""
+              />
+              <p class="testimonials__parg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                rerum expedita harum eos veritatis ipsam, ea excepturi
+                molestiae, blanditiis ducimus velit dolore voluptatem quaerat
+                ratione?
+              </p>
+              <p class="testimonials__author">-- robert bamario</p>
             </div>
           </div>
         </section>
       </main>
+      <footer class="footer">
+        <div class="footer__list-container">
+          <ul class="footer__list">
+            <li><h1 class="footer__header">learn more</h1></li>
+            <li><a href="" class="footer__link"> How It Works</a></li>
+            <li><a href="" class="footer__link">Testimonials </a></li>
+            <li><a href="" class="footer__link"> Pricing </a></li>
+            <li><a href="" class="footer__link"> Support </a></li>
+            <li><a href="" class="footer__link"> Blog </a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><h1 class="footer__header">Add-Ons</h1></li>
+            <li><a href="" class="footer__link"> Delivery </a></li>
+            <li><a href="" class="footer__link"> Marketing </a></li>
+            <li><a href="" class="footer__link"> Websites</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><h1 class="footer__header">company</h1></li>
+            <li><a href="" class="footer__link"> about</a></li>
+            <li><a href="" class="footer__link"> careers</a></li>
+            <li><a href="" class="footer__link"> contacts</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><h1 class="footer__header">legal</h1></li>
+            <li><a href="" class="footer__link">refund policy</a></li>
+            <li><a href="" class="footer__link"> terms</a></li>
+            <li><a href="" class="footer__link"> privacy policy</a></li>
+          </ul>
+        </div>
+        <p class="footer__copywrite">
+          &copy; 2020 Copywrite. <br class="footer__br" />
+          All Rights Reserved.
+        </p>
+        <p class="footer__author">
+          Made with <span class="footer__love"> &#9829 </span> By <span class="footer__developer">kranz</span>
+        </p>
+      </footer>
     </div>
+    <script src="./public/js/app.js"></script>
   </body>
 </html>

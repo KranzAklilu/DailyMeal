@@ -4,3 +4,9 @@
   height: 20vh;
   width: 100%;
 }
+@media (min-width: $large) {
+  .header {
+    max-width: 100%;
+    @include flex(column, flex-start, flex-start);
+  }
+}

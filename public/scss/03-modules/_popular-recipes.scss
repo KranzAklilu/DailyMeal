@@ -41,6 +41,12 @@
     border-radius: 10px;
     font-size: 0.9rem;
     font-weight: 600;
+    &:hover {
+      transition: $transition;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #000;
+    }
   }
   &__hr {
     width: 100%;
@@ -49,7 +55,7 @@
   &__menu {
     padding: 20px 30px;
     width: 100%;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: $shadow;
   }
   &__menu-header {
     text-transform: capitalize;
@@ -60,8 +66,11 @@
     width: 100%;
     margin-top: 50px;
     border-radius: 10px;
+    max-height: 350px;
+    overflow: scroll;
   }
   &__item {
+    cursor: pointer;
     background-color: $light-gray;
     margin: 30px 0;
     padding: 10px 20px;
@@ -96,19 +105,33 @@
       font-size: 1.7rem;
     }
     &__container {
-      @include flex(row, center, center);
+      margin-top: 75px;
+      @include flex(row, center, flex-end);
     }
     &__hr {
       display: none;
     }
     &__card {
       margin-right: 15px;
+      box-shadow: $shadow;
     }
     &__card-img {
       height: 300px;
     }
+    &__card-header {
+      margin: 25px 15px;
+    }
+    &__card-desc {
+      font-size: 1.4rem;
+    }
+    &__link {
+      padding: 15px 30px;
+    }
     &__menu {
       margin-left: 15px;
+    }
+    &__text-container {
+      padding-left: 40px;
     }
   }
 }

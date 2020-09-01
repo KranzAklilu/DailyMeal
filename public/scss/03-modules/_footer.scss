@@ -1,0 +1,44 @@
+.footer {
+  &__list-container {
+    padding: 50px 0;
+  }
+  &__header {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+  &__link {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+  }
+  &__copywrite {
+    background-color: $dark-gray;
+    font-size: 0.8rem;
+    padding: 10px 0;
+  }
+  &__author {
+    padding: 5px 0;
+    background: $dark-gray;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  &__love {
+    color: red;
+  }
+  &__developer {
+    font-family: $accent;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: $large) {
+  .footer {
+    &__list-container {
+      @include flex(row, space-evenly, flex-start);
+      text-align: left;
+    }
+    &__br {
+      display: none;
+    }
+  }
+}
